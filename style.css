@@ -25,18 +25,19 @@ body {
 
 /* Header */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background: #1a1a1a; /* Darker background for better contrast */
+    color: #f5f5f5; /* Softer white for readability */
+    padding: 1.5rem 0; /* Increased padding for better spacing */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
 }
 
 header .logo {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.5rem; /* Larger logo for emphasis */
+    font-weight: 800;
+    color: #ff5733; /* Vibrant color for the logo */
 }
 
 .nav-links {
@@ -72,7 +73,7 @@ header .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1a1a1a;
+    background: #2a2a2a; /* Slightly lighter than header for contrast */
     padding: 1rem 2rem;
 }
 
@@ -88,22 +89,37 @@ header .logo {
 }
 
 .horizontal-nav .nav-links a {
-    color: #ffffff;
+    color: #f5f5f5; /* Softer white for better contrast */
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
 }
 
 .horizontal-nav .nav-links a:hover {
-    color: #ff6f61;
+    color: #ff5733; /* Match hover color with logo */
+    transform: scale(1.15); /* Slight zoom effect */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 6rem 1rem;
-    background: linear-gradient(135deg, #1a1a1a, #333333);
+    padding: 7rem 1rem;
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Improved gradient for depth */
     color: #ffffff;
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
+}
+
+.hero h1 {
+    font-size: 3.5rem; /* Larger font for emphasis */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #dcdcdc; /* Softer white for secondary text */
 }
 
 .responsive-img {
@@ -123,62 +139,62 @@ header .logo {
 
 /* Features Section */
 #features {
-    background: #f4f4f4;
+    background: #f7f7f7; /* Light background for contrast */
     color: #333;
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
     text-align: center;
 }
 
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 2.5rem; /* Increased gap for better spacing */
+    margin-top: 2.5rem;
 }
 
 .feature {
     background: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smoother animation */
 }
 
 .feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-20px); /* Increased hover lift */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .feature i {
-    font-size: 3rem;
-    color: #ff6f61;
-    margin-bottom: 1rem;
+    font-size: 3.5rem; /* Larger icons for emphasis */
+    color: #ff5733;
+    margin-bottom: 1.5rem;
 }
 
 .feature h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #333;
 }
 
 .feature p {
-    color: #666;
+    color: #555; /* Softer gray for readability */
 }
 
 /* Footer */
 footer {
-    background: #1a1a1a;
-    color: #ffffff;
-    padding: 1rem 0;
+    background: #1a1a1a; /* Darker footer for contrast */
+    color: #f5f5f5;
+    padding: 2rem 0; /* Increased padding for better spacing */
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 /* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px); /* More pronounced initial position */
     }
     to {
         opacity: 1;
@@ -192,7 +208,7 @@ footer {
 }
 
 .slide-in {
-    transform: translateX(-50px);
+    transform: translateX(-80px); /* Increased initial slide distance */
     opacity: 0;
     animation: slideIn 1.5s ease-in-out forwards;
 }
@@ -206,12 +222,21 @@ footer {
 
 /* Buttons */
 button, a {
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
 }
 
 button:hover, a:hover {
-    transform: scale(1.05);
-    color: #ff6f61;
+    transform: scale(1.15); /* Slight zoom effect */
+    color: #ff5733;
+}
+
+/* Section Spacing */
+#about {
+    margin-bottom: 5rem; /* Add spacing below About Us section */
+}
+
+#services {
+    margin-bottom: 5rem; /* Add spacing below Services section */
 }
 
 /* Responsive Design */
