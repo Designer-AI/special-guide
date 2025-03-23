@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Metadata -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,19 +10,24 @@
         <meta name="author" content="Agastya Naik">
         <meta name="robots" content="index, follow">
         <title>DESIGN AI | Empowering the Future</title>
+
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!-- Scripts -->
         <script defer src="script.js"></script>
     </head>
     <body>
+        <!-- Header -->
         <header>
             <div class="container">
-                <nav>
+                <nav class="horizontal-nav">
                     <h1 class="logo">DESIGN AI</h1>
-                    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -29,46 +35,72 @@
             </div>
         </header>
 
+        <!-- Main Content -->
         <main>
+            <!-- Hero Section -->
             <section id="home" class="hero">
                 <div class="container">
-                    <h1 class="fade-in">Welcome to DESIGN AI</h1>
-                    <p class="fade-in">Empowering businesses and individuals with cutting-edge AI solutions. Let's shape the future together.<br>DESIGN AI is an organisation launched by Tech_Zero to enable the world of AI into a safe, affordable and sustainable way towards the future.</p>
-                    <img src=".github/hello_pic.jpg" alt="Welcome to DESIGN AI" class="responsive-img slide-in">
+                    <h1>Welcome to DESIGN AI</h1>
+                    <p>Empowering businesses and individuals with cutting-edge AI solutions. Let's shape the future together.</p>
+                    <img src=".github/hello_pic.jpg" alt="Welcome to DESIGN AI" class="responsive-img">
                 </div>
             </section>
 
+            <!-- About Section -->
             <section id="about">
                 <div class="container">
-                    <h1 class="fade-in">About Us</h1>
-                    <img src=".github/computer_code.jpg" alt="About Us" class="responsive-img slide-in">
-                    <p class="fade-in">At DESIGN AI, we are passionate about making AI accessible to everyone. Founded in 2025 by Agastya Naik, we are committed to open-source innovation and delivering impactful AI solutions.</p>
+                    <h1>About Us</h1>
+                    <p>At DESIGN AI, we are passionate about making AI accessible to everyone. Founded in 2025 by Agastya Naik, we are committed to open-source innovation and delivering impactful AI solutions.</p>
                 </div>
             </section>
 
+            <!-- Features Section -->
+            <section id="features">
+                <div class="container">
+                    <h1>Our Features</h1>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-brain"></i>
+                            <h2>Innovative AI</h2>
+                            <p>We leverage the latest advancements in AI to deliver cutting-edge solutions.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h2>User-Centric Design</h2>
+                            <p>Our solutions are designed with the end-user in mind for maximum impact.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-lock"></i>
+                            <h2>Secure & Reliable</h2>
+                            <p>We prioritize security and reliability in all our AI services.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
             <section id="services">
                 <div class="container">
-                    <h1 class="fade-in">Our Services</h1>
-                    <ul class="fade-in">
+                    <h1>Our Services</h1>
+                    <ul>
                         <li>AI Consulting</li>
                         <li>Custom AI Development</li>
                         <li>AI Integration Services</li>
                         <li>AI Training and Workshops</li>
-                        <li>And much more...</li>
                     </ul>
                 </div>
             </section>
 
+            <!-- Contact Section -->
             <section id="contact">
                 <div class="container">
-                    <h1 class="fade-in">Contact Us</h1>
-                    <img src=".github/ai_bot.jpg" alt="Contact Us" class="responsive-img slide-in">
-                    <p class="fade-in">Have questions or need assistance? Reach out to us anytime:</p>
-                    <p class="fade-in">Email: <a href="mailto:agastya.naik27@outlook.com">agastya.naik27@outlook.com</a></p>
+                    <h1>Contact Us</h1>
+                    <p>Email: <a href="mailto:agastya.naik27@outlook.com">agastya.naik27@outlook.com</a></p>
                 </div>
             </section>
         </main>
 
+        <!-- Footer -->
         <footer>
             <div class="container">
                 <p>&copy; 2025 DESIGN AI. All rights reserved.</p>
