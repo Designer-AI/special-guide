@@ -103,20 +103,20 @@ header .logo {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 7rem 1rem;
-    background: linear-gradient(135deg, #1a1a1a, #333333); /* Improved gradient for depth */
+    padding: 8rem 1rem; /* Increased padding for emphasis */
+    background: linear-gradient(135deg, #1a1a1a, #444444); /* Improved gradient for depth */
     color: #ffffff;
     animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
 }
 
 .hero h1 {
-    font-size: 3.5rem; /* Larger font for emphasis */
+    font-size: 3.8rem; /* Larger font for emphasis */
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
 .hero p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
     line-height: 1.8;
     color: #dcdcdc; /* Softer white for secondary text */
@@ -141,20 +141,20 @@ header .logo {
 #features {
     background: #f7f7f7; /* Light background for contrast */
     color: #333;
-    padding: 5rem 1rem;
+    padding: 6rem 1rem;
     text-align: center;
 }
 
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem; /* Increased gap for better spacing */
-    margin-top: 2.5rem;
+    gap: 3rem; /* Increased gap for better spacing */
+    margin-top: 3rem;
 }
 
 .feature {
     background: #ffffff;
-    padding: 2.5rem;
+    padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smoother animation */
@@ -185,9 +185,9 @@ header .logo {
 footer {
     background: #1a1a1a; /* Darker footer for contrast */
     color: #f5f5f5;
-    padding: 2rem 0; /* Increased padding for better spacing */
+    padding: 3rem 0; /* Increased padding for better spacing */
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 /* Animations */
@@ -231,12 +231,16 @@ button:hover, a:hover {
 }
 
 /* Section Spacing */
+section {
+    padding: 6rem 1rem; /* Consistent padding for all sections */
+}
+
 #about {
-    margin-bottom: 5rem; /* Add spacing below About Us section */
+    margin-bottom: 6rem; /* Increased spacing below About Us section */
 }
 
 #services {
-    margin-bottom: 5rem; /* Add spacing below Services section */
+    margin-bottom: 6rem; /* Increased spacing below Services section */
 }
 
 /* Responsive Design */
@@ -258,3 +262,44 @@ button:hover, a:hover {
         display: block;
     }
 }
+
+/* Content Grid 
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fith, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.content-item {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.content-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content-item p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.content-item .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.3s ease;*/
