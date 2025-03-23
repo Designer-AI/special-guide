@@ -2,24 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Design AI is an AI organisation that provides AI services to businesses and individuals.">
+        <meta name="keywords" content="AI, Artificial Intelligence, AI Organisation, AI Services, AI Experience">
+        <meta name="author" content="Agastya Naik">
+        <meta name="robots" content="index, follow">
         <title>DESIGN AI | An AI Organisation</title>
-        <link rel="stylesheet" href="style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <meta name="description" content="Design AI is an AI organisation that provides AI services to businesses and individuals. It is also one AI experience area where users are enabled to use our explicit AI services."/>
-        <meta name="keywords" content="AI, Artificial Intelligence, AI Organisation, AI Services, AI Experience"/>
-        <meta name="author" content="Agastya Naik"/>
-        <meta name="robots" content="index, follow"/>
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
     </head>
-
     <body>
         <header>
             <div class="container">
                 <nav>
-                    <!-- Nav-bar -->    
-                    <h1>DESIGN AI</h1>
-                    <ul>
+                    <h1 class="logo">DESIGN AI</h1>
+                    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                    <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
@@ -29,50 +28,48 @@
             </div>
         </header>
 
-        <!-- Id--pages -->
-        <section id="home">
-            <div class="containerA">
-                <h1>Welcome to DESIGN AI</h1>
-                <p>Design AI is an AI organisation that provides AI services to businesses and individuals. It is also one AI experience area where users are enabled to use our explicit AI services.</p>
-                <img src="hello_pic.jpg" alt="A welcoming image for DESIGN AI" width="500" height="500"/>
-                <p>Our mission is to provide AI services to all of mankind and to make AI accessible to everyone. We believe that AI is the future and that it can be used to solve many of the world's problems.</p>
-            </div>
-        </section>
+        <main>
+            <section id="home" class="hero">
+                <div class="container">
+                    <h1>Welcome to DESIGN AI</h1>
+                    <p>Design AI provides AI services to businesses and individuals, making AI accessible to everyone.</p>
+                    <button class="cta">Get Started</button>
+                    <p>Learn more about us below...</p>
+                    <p>DESIGN AI is one AI organisation developed by my team and me to provide are users a better exeperience</p>
+                    <img src=".github/hello_pic.jpg" alt="A welcoming image for DESIGN AI" class="responsive-img">
+                </div>
+            </section>
 
-        <section id="about">
-            <div class="containerB">
-                <h1>About Us</h1>
-                <img src="computer_code.jpg" alt="about_us" width="500" height="500"/>
-                <p>DESIGN AI is a non-profit and for-profit AI company that believes in open-source AI and much more. Founded by Agastya Naik in 2025, Design AI has continuously been updating for all of mankind.</p>
-                <p>Our team of AI experts is dedicated to providing the best AI services to our clients. We have worked with many businesses and individuals to help them implement AI solutions that have helped them grow and succeed.</p>
-                <p>Our goal is to make AI accessible to everyone and to help businesses and individuals use AI to solve their problems. We believe that AI is the future and that it can be used to solve many of the world's problems.</p>
-            </div>
-        </section>
+            <section id="about">
+                <div class="container">
+                    <h1>About Us</h1>
+                    <img src=".github/computer_code.jpg" alt="About Us" class="responsive-img">
+                    <p>DESIGN AI is a non-profit and for-profit AI company founded by Agastya Naik in 2025. We believe in open-source AI and strive to make AI accessible to everyone.</p>
+                </div>
+            </section>
 
-        <section id="services">
-            <div class="containerC">
-                <h1>Our Services</h1>
-                <p>Design AI provides the following services:</p>
-                <ul>
-                    <li>AI Consulting</li>
-                    <li>AI Development</li>
-                    <li>AI Services</li>
-                    <li>AI Experience</li>
-                    <li>And much more...</li>
-                </ul>
-            </div>
-        </section>
+            <section id="services">
+                <div class="container">
+                    <h1>Our Services</h1>
+                    <ul>
+                        <li>AI Consulting</li>
+                        <li>AI Development</li>
+                        <li>AI Services</li>
+                        <li>AI Experience</li>
+                        <li>And much more...</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id="contact">
-            <div class="containerD">
-                <h1>Contact Us</h1>
-                <img src="ai_bot.jpg" alt="contact_us" width="500" height="500"/>
-                <p>If you have any questions or would like to learn more about our services, please contact us:</p>
-                <p>Email:
-                    <a href="mailto:agastya.naik27@outlook.com">Click here to email us</a>
-                </p>
-            </div>
-        </section>
+            <section id="contact">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <img src=".github/ai_bot.jpg" alt="Contact Us" class="responsive-img">
+                    <p>If you have any questions, feel free to reach out:</p>
+                    <p>Email: <a href="mailto:agastya.naik27@outlook.com">agastya.naik27@outlook.com</a></p>
+                </div>
+            </section>
+        </main>
 
         <footer>
             <div class="container">
