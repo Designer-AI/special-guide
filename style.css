@@ -48,6 +48,7 @@ header .logo {
     display: flex;
     gap: 1.5rem;
     float: right;
+    padding-top: -10px;
 }
 
 .nav-links a {
