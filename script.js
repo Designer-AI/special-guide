@@ -1,13 +1,20 @@
-// Select DOM elements
-const nav = document.querySelector('nav');
-const navToggle = document.createElement('button');
+document.addEventListener('DOMContentLoaded', () => {
+    // Select the navigation element
+    const nav = document.querySelector('nav');
 
-// Add a toggle button for the navigation menu
-navToggle.textContent = '☰'; // Hamburger menu icon
-navToggle.classList.add('nav-toggle');
-nav.prepend(navToggle);
+    // Ensure the navigation element exists
+    if (nav) {
+        // Create the toggle button
+        const navToggle = document.createElement('button');
+        navToggle.textContent = '☰'; // Hamburger menu icon
+        navToggle.classList.add('nav-toggle');
 
-// Toggle the navigation menu on smaller screens
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
+        // Add the toggle button to the navigation
+        nav.prepend(navToggle);
+
+        // Add click event listener to toggle the menu
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+    }
 });
