@@ -23,4 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Add animations on scroll
+    const animatedElements = document.querySelectorAll('.fade-in, .slide-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    animatedElements.forEach(el => observer.observe(el));
 });

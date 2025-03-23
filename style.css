@@ -11,11 +11,31 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #e0e0e0;
+    background-color: #121212;
     overflow-x: hidden;
 }
 
+/*  Section */
+
+#home {
+    background: url('../img/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        float: right;
+    }
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -70,8 +90,10 @@ header .logo {
 .hero {
     text-align: center;
     padding: 4rem 1rem;
-    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     animation: fadeIn 1.5s ease-in-out;
+
+    color: #ffffff;
 }
 
 .responsive-img {
@@ -85,8 +107,8 @@ header .logo {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
-    color: #fff;
+    background: #1e3c72;
+    color: #e0e0e0;
     margin-top: 2rem;
 }
 
@@ -100,6 +122,34 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.slide-in {
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Buttons */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    transform: scale(1.05);
+    color: #f4a261;
 }
 
 /* Responsive Design */
