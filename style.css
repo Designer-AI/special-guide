@@ -22,7 +22,6 @@ body {
 }
 
 /* Header */
-/* Header */
 header {
     background: none; /* Removes the gray background */
     color: #333; /* Adjust text color if needed */
@@ -48,6 +47,7 @@ header .logo {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    float: right;
 }
 
 .nav-links a {
