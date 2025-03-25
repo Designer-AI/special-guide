@@ -8,12 +8,153 @@
     box-sizing: border-box;
 }
 
+/* Global Improvements */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #e0e0e0;
-    background-color: #121212;
+    line-height: 1.8; /* Improved line spacing for readability */
+    color: #333; /* Darker text for readability */
+    background-color: #f9f9f9; /* Light background for better contrast */
     overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Consistent heading weight */
+    color: #222; /* Darker headings for better contrast */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem; /* Consistent spacing for paragraphs */
+    color: #333; /* Softer black for paragraph text */
+}
+
+a {
+    color: #007bff; /* Bright blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Buttons */
+button, .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #007bff; /* Bright blue for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Section Styling */
+section {
+    padding: 6rem 1rem; /* Consistent padding for all sections */
+    margin-bottom: 6rem; /* Consistent spacing between sections */
+    background: #ffffff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section h2 {
+    font-size: 2.5rem; /* Larger section titles */
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+section:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Grid Layouts */
+.grid {
+    display: grid;
+    gap: 2rem; /* Consistent gap for grids */
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Cards */
+.card {
+    background: #ffffff; /* White background for better contrast */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333; /* Darker text for readability */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #f5f5f5;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #ff5733;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 4rem 1rem; /* Reduced padding for smaller screens */
+    }
 }
 
 /* Container */
@@ -104,8 +245,8 @@ header .logo {
 .hero {
     text-align: center;
     padding: 8rem 1rem; /* Increased padding for emphasis */
-    background: linear-gradient(135deg, #1a1a1a, #444444); /* Improved gradient for depth */
-    color: #ffffff;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Vibrant gradient for hero section */
+    color: #ffffff; /* White text for contrast */
     animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
 }
 
@@ -113,6 +254,7 @@ header .logo {
     font-size: 3.8rem; /* Larger font for emphasis */
     font-weight: bold;
     margin-bottom: 1.5rem;
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
 }
 
 .hero p {
@@ -120,6 +262,7 @@ header .logo {
     margin-bottom: 2rem;
     line-height: 1.8;
     color: #dcdcdc; /* Softer white for secondary text */
+    animation: slideIn 2s ease-in-out; /* Smooth slide-in animation */
 }
 
 .responsive-img {
@@ -139,7 +282,7 @@ header .logo {
 
 /* Features Section */
 #features {
-    background: #f7f7f7; /* Light background for contrast */
+    background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Subtle gradient for depth */
     color: #333;
     padding: 6rem 1rem;
     text-align: center;
@@ -157,12 +300,13 @@ header .logo {
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smoother animation */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease; /* Smoother animation */
 }
 
 .feature:hover {
     transform: translateY(-20px); /* Increased hover lift */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    background-color: #f9f9f9; /* Slightly lighter background on hover */
 }
 
 .feature i {
@@ -194,7 +338,7 @@ footer {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(40px); /* More pronounced initial position */
+        transform: translateY(20px); /* Subtle initial position */
     }
     to {
         opacity: 1;
@@ -214,6 +358,10 @@ footer {
 }
 
 @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Subtle slide-in effect */
+    }
     to {
         transform: translateX(0);
         opacity: 1;
@@ -236,11 +384,132 @@ section {
 }
 
 #about {
-    margin-bottom: 6rem; /* Increased spacing below About Us section */
+    background: #f7f7f7; /* Light background for contrast */
+    color: #333;
+    padding: 6rem 1rem; /* Consistent padding */
+    text-align: center;
+    margin-bottom: 6rem; /* Spacing below the section */
+}
+
+#about .section-title {
+    font-size: 2.8rem; /* Larger title for emphasis */
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+#about .about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 3rem; /* Spacing between items */
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#about .about-text {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    line-height: 1.8; /* Improved line spacing */
+    color: #555;
+    text-align: left;
+}
+
+#about .about-text h3 {
+    font-size: 2rem; /* Subheading size */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#about .about-text p {
+    margin-bottom: 1.5rem;
+}
+
+#about .about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Rounded corners for images */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .about-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 #services {
+    background: #f9f9f9; /* Light background for contrast */
+    color: #333;
+    padding: 6rem 1rem; /* Consistent padding */
+    text-align: center;
     margin-bottom: 6rem; /* Increased spacing below Services section */
+}
+
+#services .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+#services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted for better responsiveness */
+    gap: 3rem; /* Increased spacing for better layout */
+    margin-top: 3rem;
+}
+
+#services .service-item {
+    background: #ffffff;
+    padding: 3rem; /* Increased padding for better spacing */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease; /* Added background-color transition */
+}
+
+#services .service-item:hover {
+    transform: translateY(-12px); /* Slightly increased lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: #f9f9f9; /* Light background on hover */
+}
+
+#services .service-item i {
+    font-size: 3.2rem; /* Slightly larger icon size */
+    color: #ff5733; /* Vibrant color for icons */
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#services .service-item i:hover {
+    color: #ff6f61; /* Slightly lighter color on hover */
+}
+
+#services .service-item h3 {
+    font-size: 2rem; /* Larger heading for emphasis */
+    margin-bottom: 1.2rem;
+    color: #222;
+}
+
+#services .service-item p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    color: #555;
+    line-height: 1.8; /* Improved line spacing */
+    margin-bottom: 1rem;
+}
+
+#services .service-item .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#services .service-item .btn:hover {
+    background: #ff6f61; /* Lighter background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Responsive Design */
@@ -263,43 +532,124 @@ section {
     }
 }
 
-/* Content Grid 
-.content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fith, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
 }
 
-.content-item {
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.content-item h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.contact-section .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
     color: #333;
 }
 
-.content-item p {
-    color: #555;
-    margin-bottom: 1.5rem;
+.contact-section .section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
 }
 
-.content-item .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #ff5733;
-    color: #fff;
-    text-decoration: none;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    transition: background 0.3s ease, transform 0.3s ease;*/
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-details {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media .social-link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.social-media .social-link:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
