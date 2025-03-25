@@ -15,21 +15,51 @@ body {
     color: #333; /* Darker text for readability */
     background-color: #f9f9f9; /* Light background for better contrast */
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+body.home-page {
+    color: #fff; /* Changed text color to white for the home page */
+}
+
+body.home-page p {
+    color: #dcdcdc; /* Softer white for paragraph text on the home page */
+}
+
+body.home-page h1, 
+body.home-page h2, 
+body.home-page h3, 
+body.home-page h4, 
+body.home-page h5, 
+body.home-page h6 {
+    color: #fff; /* Ensure headings on the home page are white */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700; /* Consistent heading weight */
-    color: #222; /* Darker headings for better contrast */
+    color: #fff; /* Changed heading color to white */
     margin-bottom: 1rem;
+    letter-spacing: 0.5px; /* Slight letter spacing for better readability */
+}
+
+
+body:not(.home-page) h1, 
+body:not(.home-page) h2, 
+body:not(.home-page) h3, 
+body:not(.home-page) h4, 
+body:not(.home-page) h5, 
+body:not(.home-page) h6 {
+    color: #000; /* Changed headings to black for non-home pages */
 }
 
 p {
     margin-bottom: 1.5rem; /* Consistent spacing for paragraphs */
-    color: #333; /* Softer black for paragraph text */
+    color: #555; /* Softer gray for paragraph text */
+    line-height: 1.8;
 }
 
 a {
-    color: #007bff; /* Bright blue for links */
+    color: #007bff; /* Changed link color to blue */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -43,7 +73,7 @@ a:hover {
 button, .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background: #007bff; /* Bright blue for buttons */
+    background: #007bff; /* Changed button background to blue */
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -71,7 +101,7 @@ section h2 {
     font-size: 2.5rem; /* Larger section titles */
     text-align: center;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: #222; /* Changed section title color to dark gray */
 }
 
 section:hover {
@@ -245,7 +275,7 @@ header .logo {
 .hero {
     text-align: center;
     padding: 8rem 1rem; /* Increased padding for emphasis */
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Vibrant gradient for hero section */
+    background: linear-gradient(135deg, #000, #333); /* Changed hero section gradient to black */
     color: #ffffff; /* White text for contrast */
     animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
 }
